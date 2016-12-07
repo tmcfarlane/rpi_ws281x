@@ -96,7 +96,7 @@ class Adafruit_NeoPixel(object):
 		if ws != None:
 			self._cleanup()
 			
-	def _cleanup(self):
+	def cleanup(self):
 		# Clean up memory used by the library when not needed anymore.
 		if self._leds is not None:
 			ws.ws2811_fini(self._leds)
